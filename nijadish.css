@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px 40px;
+    background-color: rgb(5, 47, 27);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: arial;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+header a[href="wame"] {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(2, 206, 2);
+    color: white;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+header a[href="wame"]:hover {
+    background-color: green;
+}
+
+#home {
+    background-image: url('assets/naijabites_assets/hero_food.png');
+    padding: 40px 70px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 40px;
+}
+
+.spoil {
+    width: 350px;
+}
+
+#home h2 {
+    font-size: 41px;
+    color: white;
+}
+
+#home p {
+    color: white;
+}
+
+.count {
+    color: rgb(211, 210, 210);
+    font-size: 20px;
+    font-family: arial;
+}
+
+#home .flavor {
+    color: rgb(255, 166, 0);
+}
+
+#home a[href="wame"] {
+    color: white;
+    text-decoration: none;
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+#home a[href="#menu"] {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#about {
+    display: flex;
+    padding: 20px 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about h2 {
+    font-size: 31px;
+    color: rgb(2, 43, 4);
+}
+
+#about p {
+    font-family: ariel;
+    color: rgb(5, 70, 5);
+}
+
+.summary {
+    width: 350px;
+}
+
+#about a[href="learnmore"] {
+    margin-top: 20px;
+    line-height: 50px;
+    background-color: orange;
+    text-decoration: none;
+    color: rgb(6, 73, 6);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#menu {
+    background-color: rgba(204, 228, 236, 0.486);
+}
+
+#menu a {
+    color: green;
+    transition: 0.6s;
+}
+
+#menu a:hover {
+    color: rgb(8, 211, 8);
+}
+
+.flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 70px;
+}
+
+.in-flow {
+    display: flex;
+    padding: 10px 70px;
+}
+
+.menu-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 250px;
+    margin-right: 20px;
+}
+
+.menu-card h4 {
+    color: green;
+}
+
+.menu-card p {
+    color: grey;
+}
+
+.menu-card h3 {
+    color: green;
+    margin-top: 20px;
+}
+
+#review {
+  flex: 1;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.review-row {
+    display: flex;
+}
+
+.soft p {
+    font-family: ariel;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.soft h4 {
+    font-size: 31px;
+    font-family: ariel;
+    color: rgb(6, 70, 6);
+}
+
+.rent {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+.quote {
+    margin-top: 10px;
+    color: grey;
+    font-family: ariel;
+}
+
+
+.fa-star {
+    color: gold;
+}
+
+.review-card {
+    padding: 10px 20px;
+    background-color: white;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-right: 10px;
+}
+
+#location {
+  display: flex;
+  padding: 20px;
+  width: 500px;
+}
+
+.info-box {
+  display: flex;
+  gap: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 0;
+  width: 700px;
+  max-width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+
+.info-box .left,
+.info-box .right {
+  flex: 1; 
+  padding: 24px;
+}
+
+.info-box .left {
+  border-right: 1px solid #e5e7eb;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.map {
+  height: 120px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  margin: 12px 0;
+}
+
+.directions-btn {
+  display: inline-block;
+  background: #15803d;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.bottom-sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: rgba(252, 216, 228, 0.623);
+}
+
+#footer {
+    background-color: rgb(6, 51, 30);
+    padding: 20px 60px;
+}
+
+#footer a[href="wame"] {
+    padding: 10px;
+    background-color: rgb(9, 211, 9);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+}
+
+#footer a[href="wame"]:hover {
+    background-color: green;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-banner {
+  color: #d1fae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 14px;
+  font-family: 'DM Serif Display', serif;
+  letter-spacing: 0.5px;
+}
+
+.top-banner .dot {
+  color: #6ee7b7;
+  font-size: 10px;
+}
+
+.top-banner .heart {
+  color: #fbbf24;
+  font-size: 14px;
+}
+
+.enjoy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+#home {
+    padding: 40px 20px;
+}
+
+.spoil {
+    width: 100%;
+}
+
+#home h2 {
+    font-size: 32px;
+}
+
+#home a {
+    display: block;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+#about {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 25px;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+
+.summary {
+    width: 100%;
+}
+
+.in-flow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.menu-card {
+    padding-right: 0;
+    min-width: 0;
+}
+
+.menu-card img {
+    width: 100%;
+    height: auto;
+}
+
+.bottom-sections {
+    flex-direction: column;
+    gap: 20px;
+}
+
+#review,
+#location {
+    width: 100%;
+}
+
+.review-row {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-card {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+}
+
+.info-box {
+    flex-direction: column;
+    width: 100%;
+}
+
+.info-box .left {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#footer {
+    padding: 25px 20px;
+}
+
+.end {
+    flex-direction: column;
+    gap: 20px;
+}
+
+#footer nav {
+    flex-wrap: wrap;
+}
+
+.enjoy {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.top-banner {
+    flex-wrap: wrap;
+}
+}
